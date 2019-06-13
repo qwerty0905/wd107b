@@ -2,8 +2,28 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8"> 
-<title>Design</title>
-<style>
+<title>Kingslanding</title>
+	<script>
+function startTime(){
+	var today=new Date();
+	var h=today.getHours();
+	var m=today.getMinutes();
+	var s=today.getSeconds();// 在小于10的数字前加一个‘0’
+	m=checkTime(m);
+	s=checkTime(s);
+	document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+	t=setTimeout(function(){startTime()},500);
+}
+function checkTime(i){
+	if (i<10){
+		i="0" + i;
+	}
+	return i;
+}
+</script>
+</head>	
+
+<style type="text/css">
 body 
 {
   margin: 0px; 
@@ -13,17 +33,19 @@ body
   	position: static;
 	background-color:#000000;
   	border: 10px  ;
-	height:38.5px;
+	height:56.4px;
 	font-size:20px;
 }
 .top a {
   float: left;
-  font-size: 16px;
+  font-size: 20px;
   color: white;
-  padding: 10px;
+  padding: 16.6px;
   border: none;
   text-decoration: none;
 }
+
+
 .left
 {
 	position: fixed;
@@ -82,7 +104,7 @@ body
 
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 12px 10px;
     text-decoration: none;
     display: block;
 }
@@ -130,26 +152,28 @@ body
 <body>
 	
 <div class="dropdown" style="float:right;">
-	  <button class="dropbtn">其他連結</button>
+	  <button class="dropbtn"><body onload="startTime()">現在時間<div id="txt"></div></button>
 	  <div class="dropdown-content">
 		<a class="clk" href="https://www.google.com.tw" 
 			 target="_blank">google</a>
 	  <a class="clk" href="https://www.youtube.com" 
 		 target="_blank">youtube</a>
-	  <a class="clk" href="https://tw.iqiyi.com" 
-		 target="_blank">愛奇異</a>
 	  <a class="clk" href="https://www.momovod.com/" 
 		 target="_blank">momovod</a>
-	  </div>
-	</div>
+		  
+	  </div>	
+</div>
 	
 <div class="top">
 <a href="#news">Home</a>
-
+	<tr>
+		<td width="82"><iframe scrolling="no" name="music" frameborder="0" width="82" height="23" src=""></iframe></td>
+	</tr>
 </div>
 	
 <div class="left">
- <ul><li><a href="https://qwerty0905.github.io/wd107b/8-1.html">．來自天堂的魔鬼</a></li>
+ <ul>
+	 <li><a href="https://qwerty0905.github.io/wd107b/8-1.html">．來自天堂的魔鬼</a></li>
 	 <li><a href="https://qwerty0905.github.io/wd107b/7.html">．魔鬼中的天使</a></li>
 	 
  </ul>
@@ -158,12 +182,10 @@ body
 </html>
 <html>
 <body>
+	
 <div class="content">
-   
-    
-
 <h1>–歡迎光臨–</h1>
-<h4>黃炯瑞個人網頁 </h4>
+<h3>黃炯瑞的個人小屋</h3>
 <hr>
 <p>我這個人很簡單</p>
 <p>只要是我覺得好聽的好看的好吃的,我都會一在地重複聽重複看重複吃</p>
@@ -183,17 +205,19 @@ body
 
 <p><a href="https://search.books.com.tw/search/query/cat/all/key/%E4%B8%B9%EF%BC%8E%E5%B8%83%E6%9C%97/adv_author/1">6.丹布朗的作品</a></p>
 
-<p>音樂的部分沒有特別愛好</p>
-<p>Allen Walker,Beyonce,Christina Perri,五月天,周杰倫都會聽</p>
+<p>音樂的部分沒有特別愛好,右邊有兩首目前常常聽的歌的介紹</p>
+<p>其他的像是Allen Walker,Beyonce,Christina Perri,五月天,周杰倫我都會聽</p>
 <p>也喜歡聽歌劇
-	像是<a href="https://youtu.be/RRkqX8tD014">悲慘世界</a>
-	<a href="https://www.momovod.com/vod-play-id-105614-src-1-num-1.html">歌劇魅影</a>都行</p>
+	像是<a href="https://youtu.be/RRkqX8tD014">Les Miserables</a>
+	<a href="https://www.momovod.com/vod-play-id-105614-src-1-num-1.html">Phantom of the Opera</a>
+	<a href="https://youtu.be/FfJ3k4-1uU0">Romeo and Juliet</a>
+	都行</p>
 
 <p>目前電腦遊戲只有兩個</p>
 
 <a href="https://www.ubisoft.com.tw/acu/gameinfo.shtml" title="刺客教條：大革命">刺客教條：大革命</a>和
 <a href="https://wuxia.qq.com/main.shtml" title="天涯明月刀">天涯明月刀</a>
-
+<embed src="" autostart="true" loop="true" volume="100" width="600" height="100"></embed>
 <br></p>
 
 </body>
