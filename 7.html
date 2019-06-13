@@ -3,6 +3,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8"> 
 <title>Design</title>
+	<script>
+function startTime(){
+	var today=new Date();
+	var h=today.getHours();
+	var m=today.getMinutes();
+	var s=today.getSeconds();// 在小于10的数字前加一个‘0’
+	m=checkTime(m);
+	s=checkTime(s);
+	document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+	t=setTimeout(function(){startTime()},500);
+}
+function checkTime(i){
+	if (i<10){
+		i="0" + i;
+	}
+	return i;
+}
+</script>
 <style>
 body 
 {
@@ -13,14 +31,14 @@ body
   	position: static;
 	background-color:#000000;
   	border: 10px  ;
-	height:38.5px;
+	height:56.6px;
 	font-size:20px;
 }
 .top a {
   float: left;
-  font-size: 16px;
+  font-size: 20px;
   color: white;
-  padding: 10px;
+  padding: 16px;
   border: none;
   text-decoration: none;
 }
@@ -129,7 +147,7 @@ body
 <body>
 	
 <div class="dropdown" style="float:right;">
-	  <button class="dropbtn">其他連結</button>
+	  <button class="dropbtn"><body onload="startTime()">現在時間<div id="txt"></div></button>
 	  <div class="dropdown-content">
 		<a class="clk" href="https://www.google.com.tw" 
 			 target="_blank">google</a>
@@ -144,7 +162,6 @@ body
 	
 <div class="top">
 <a href="#news">Home</a>
-<a href="#news">List</a>
 </div>
 	
 <div class="left">
@@ -161,7 +178,7 @@ body
 <body>
 <div class="content">
    
-    
+    <iframe width="280" height="157" src="https://www.youtube.com/embed/na_xv5iFt2Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h1>–魔鬼中的天使–</h1>
 <h4>田馥甄 </h4>
